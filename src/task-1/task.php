@@ -81,3 +81,13 @@ settype($d,"integer");
 
 echo "{$a},{$b},{$c},{$d}";
 
+/**
+ * Написать программу выводящую типы переменных.
+ */
+$a = ' ';
+$b = '10';
+$c = 11.1;
+$d = 'Привет';
+
+echo gettype($a) .PHP_EOL, gettype($b) .PHP_EOL, gettype($c) .PHP_EOL, gettype($d);
+
