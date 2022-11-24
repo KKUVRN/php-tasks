@@ -70,9 +70,14 @@ echo "{$a}, {$b}, {$c}, {$d}";
 /**
  * Написать программу устанавливающую типы переменных.
  */
-$a = true;
-$b = 10;
+$a = ' ';
+$b = '10';
 $c = 11.1;
 $d = 'Привет';
+settype($a, "bool");
+settype($b, "float");
+settype($c, "integer");
+settype($d,"integer");
 
-echo var_dump($a), var_dump($b), var_dump($c), var_dump($d);
+echo "{$a},{$b},{$c},{$d}";
+
