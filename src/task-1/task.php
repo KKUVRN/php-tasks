@@ -199,3 +199,23 @@ echo "Мне {$age} лет!";
 $text = 'abcde';
 
 echo $text[0] . " " . $text[2] . " " . $text[4];
+
+/**
+ * Дана произвольная строка, например, 'abcde'.
+ * Поменяйте первую букву (то есть букву 'a') этой строки на '!'.
+ */
+
+$text = 'abcde';
+
+$text[0] = '!';
+echo $text;
+
+echo PHP_EOL;
+
+$text[0] = 'a';
+echo $text;
+
+echo PHP_EOL;
+
+$text = substr_replace($text, '!',0,1);
+echo $text;
