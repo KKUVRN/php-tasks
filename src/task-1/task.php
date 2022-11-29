@@ -177,8 +177,7 @@ echo "{$text1}" . " " . "{$text2}";
  */
 
 $name = 'Константин';
-$result = "Привет," . " " . $name . "!";
-
+$result = 'Привет,' . ' ' . $name . '!';
 echo $result;
 
 /**
@@ -187,7 +186,6 @@ echo $result;
  */
 
 $age = 36;
-
 echo "Мне {$age} лет!";
 
 /**
@@ -197,7 +195,6 @@ echo "Мне {$age} лет!";
  */
 
 $text = 'abcde';
-
 echo $text[0] . " " . $text[2] . " " . $text[4];
 
 /**
@@ -209,14 +206,10 @@ $text = 'abcde';
 
 $text[0] = '!';
 echo $text;
-
 echo PHP_EOL;
-
 $text[0] = 'a';
 echo $text;
-
 echo PHP_EOL;
-
 $text = substr_replace($text, '!',0,1);
 echo $text;
 
@@ -226,7 +219,6 @@ echo $text;
  */
 
 $num = '12345';
-
 echo $num[0] + $num[1] + $num[2] + $num[3] + $num[4];
 
 /**
@@ -241,5 +233,4 @@ $b = 100;
 $tmp = $a;
 $a = $b;
 $b = $tmp;
-
-echo "a = $a" . PHP_EOL . "b = $b";
+echo "a = {$a}" . PHP_EOL . "b = {$b}";
