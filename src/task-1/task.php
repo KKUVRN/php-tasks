@@ -89,7 +89,7 @@ $b = '10';
 $c = 11.1;
 $d = 'Привет';
 
-echo gettype($a) .PHP_EOL, gettype($b) .PHP_EOL, gettype($c) .PHP_EOL, gettype($d);
+echo task . phpgettype($a), gettype($b) .PHP_EOL, gettype($c) .PHP_EOL, gettype($d);
 
 /**
  * Создайте переменные $a=17 и $b=10.
