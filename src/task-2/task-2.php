@@ -27,3 +27,16 @@ while ($number / 10) {
     $number /= 10;
 }
 echo $count;
+
+/**
+ * Дано трехзначное число 456. Поменяйте среднюю цифру на ноль.
+ */
+$number = 456;
+/*$number = strval($number);
+$number[1] = '0';
+settype($number, 'integer'); первый вариант*/
+settype($number, 'string');
+$number[1] = '0';
+settype($number, 'integer'); //второй вариант
+echo $number;
+
