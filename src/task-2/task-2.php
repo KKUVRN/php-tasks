@@ -16,4 +16,14 @@ $b = 54;
 $bPrecent = 84;
 echo calPercent($a, $aPercent) + calPercent($b, $bPrecent);
 
+/**
+ * Задание №2. Дано трехзначное число 123. Найдите сумму его цифр.
+ */
+$number = 123;
+$count = 0;
 
+while ($number / 10) {
+    $count += $number % 10;
+    $number /= 10;
+}
+echo $count;
