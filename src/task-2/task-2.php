@@ -40,3 +40,22 @@ $number[1] = '0';
 settype($number, 'integer'); //второй вариант
 echo $number;
 
+
+/**
+ * Задача №4. Требуется проверить, содержит ли переменная числовое значение,
+ * даже если она имеет строковый тип. пример:
+ * [5, '5', '05', 12.3, '16.7', 'five', 0xDECAFBAD, '10e200']
+ */
+$array = [5, '5', '05', 12.3, '16.7', 'five', 0xDECAFBAD, '10e200'];
+$equals = [];
+
+for ($i = 0; $i < count($array); ++$i) {
+    if (is_numeric($array[$i])) {
+        $equals [$array[$i]] = 'YES';
+    }
+    else {
+        $equals [$array[$i]] = 'NO';
+    }
+}
+
+print_r($equals);
