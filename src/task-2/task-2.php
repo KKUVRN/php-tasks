@@ -25,6 +25,11 @@ echo calPercent($a, $aPercent) + calPercent($b, $bPrecent);
 /**
  * Задание №2. Дано трехзначное число 123. Найдите сумму его цифр.
  */
+//Вариант №1
+$number = 123;
+echo $number[0] + $number[1] + $number [2];
+
+//Вариант №2
 $number = 123;
 $count = 0;
 
@@ -37,15 +42,18 @@ echo $count;
 /**
  * Задание №3. Дано трехзначное число 456. Поменяйте среднюю цифру на ноль.
  */
+//Вариант №1
 $number = 456;
-/*$number = strval($number);
+$number = strval($number);
 $number[1] = '0';
-settype($number, 'integer'); первый вариант*/
+settype($number, 'integer');
+echo $number;
+//Вариант №2
+$number = 456;
 settype($number, 'string');
 $number[1] = '0';
 settype($number, 'integer'); //второй вариант
 echo $number;
-
 
 /**
  * Задание №4. Требуется проверить, содержит ли переменная числовое значение,
@@ -76,4 +84,15 @@ $area = $lineData[0] * $lineData[1];
 $perimeter = 2 * $lineData[0] + 2 * $lineData[1];
 echo $lineData[0] . " " . $lineData[1] .PHP_EOL;
 echo $area . " " . $perimeter;
+
+/**
+ * Задание №6. В переменных a = 3 и b = 4 лежат положительные длины катетов
+ * прямоугольного треугольника. Вычислить и вывести на экран площадь треугольника и его периметр.
+ */
+
+$a = 3;
+$b = 4;
+
+echo 'Площадь треугольника = ' . $a * $b / 2 .PHP_EOL;
+echo  'Периметр треугольника = ' . $a + $b + sqrt($a ** 2 + $b ** 2);
 
