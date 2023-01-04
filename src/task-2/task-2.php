@@ -120,10 +120,10 @@ echo 'В числе $n ' . strlen((string)$n) . ' числа';
  * В числе 613 наибольшая цифра 6
  */
 //Первый вариант
-$number = (string)rand(0, 999);
+$number = (string)rand(100, 999);
 echo 'Случайное число ' . $number . PHP_EOL;
 echo 'Наибольшая цифра числа ' . $number . ' - ' . max((int)max($number[0],$number[1]), $number[2]) . PHP_EOL;
 //Второй вариант
-$number = (string)rand(0, 999);
+$number = (string)rand(100, 999);
 echo 'Случайное число ' . $number . PHP_EOL;
 echo 'Наибольшая цифра числа ' . $number . ' - ' . max(str_split($number, 1));
