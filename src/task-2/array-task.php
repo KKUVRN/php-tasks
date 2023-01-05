@@ -106,3 +106,11 @@ var_dump($array);
 $array = [0 => 'a', 10, 'd' => 11, 'en' => [100, '101b']];
 echo 'Значения массива $array' .PHP_EOL;
 print_r(array_values($array));
+
+/**
+ * Задание №23. Получить из массива ключи.
+ */
+
+$array = [0 => 'a', 10, 'd' => 11, 'en' => [100, '101b']];
+echo 'Ключи массива $array' .PHP_EOL;
+print_r(array_keys($array));
