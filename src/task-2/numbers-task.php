@@ -137,3 +137,16 @@ $number = rand(0, 999);
 echo 'Трехзначное число ' . $number . PHP_EOL;
 $number = (int)strrev((string)$number);
 echo 'Реверс числа  - ' . $number;
+
+/**
+ * Задание №10. Дано четырехзначное число. Проверить, является ли оно палиндромом. 1441, 5555, 7117
+ */
+
+$number = 7117;
+$number = (string)$number;
+
+if (substr($number, 0, 2) === strrev(substr($number, 2, 2))) {
+    echo 'Число полиндром!';
+} else {
+    echo 'Число не полиндром!';
+}
