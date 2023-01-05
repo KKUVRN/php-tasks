@@ -66,9 +66,21 @@ print_r($array);
  */
 
 $array = [ 22, 23, 24, 25, ];
-
 print_r($array);
 
 unset($array[2]);
+print_r($array);
 
+/**
+ * Задание №19. Создайте массив 'Audi', 'BMV', 'Volvo', 'Kia', 'Ford', 'Opel', 'Jeep',
+ * и измените размер массива увеличте или уменьшите его по сравнению с текущим размером.
+ */
+
+$array = [ 'Audi', 'BMV', 'Volvo', 'Kia', 'Ford', 'Opel', 'Jeep', ];
+print_r($array);
+
+unset($array[2]);
+print_r($array);
+
+$array[] = 'Lada';
 print_r($array);
