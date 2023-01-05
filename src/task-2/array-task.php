@@ -34,3 +34,12 @@ echo $array['ru'][1];
 $array = ['a', 'b', 'c', 'd', ];
 
 echo $array[0] . '+' . $array[1] . ', ' . $array[2] . '+' . $array[3];
+
+/**
+ * Задание №15. Создать массив и присвоить ему следующие значения 'Apples', 'Bananas',
+ * 'Cantaloupes', 'Dates' с указанием индекса и без.
+ */
+
+$array = ['Apples', 2 => 'Bananas', 10 => 'Cantaloupes', 'Dates', ];
+
+print_r($array);
