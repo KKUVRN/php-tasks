@@ -98,3 +98,11 @@ print_r($array);
 
 $array = [ 'Audi', 10, 'Volvo', 'Kia', -100.101, [10, 11], 'Jeep', ];
 var_dump($array);
+
+/**
+ * Задание №22. Получить из массива значения.
+ */
+
+$array = [0 => 'a', 10, 'd' => 11, 'en' => [100, '101b']];
+echo 'Значения массива $array' .PHP_EOL;
+print_r(array_values($array));
