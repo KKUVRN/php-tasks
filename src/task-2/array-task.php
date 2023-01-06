@@ -147,3 +147,16 @@ print_r($array);
 $array = [2, 8, 5, 3, ];
 $b = $array[0] * $array[1] + $array[2] * $array[3];
 echo $b;
+
+/**
+ * Задание №28. Поменять местами наибольший и наименьший элементы массива.
+ */
+
+$array = [2, 8, 5, 3, 15, 10, ];
+print_r($array);
+$keyMaxValue = array_search(max($array), $array);//ключ максимального значения
+$keyMinValue = array_search(min($array), $array);//ключ минимального значения
+$tmp = $array[$keyMaxValue];//заводим временную переменную для смены значений массива и присваиваем ей значение наибольшего элемента
+$array[$keyMaxValue] = $array[$keyMinValue];//присваиваем ключу наибольшего значения наименьшее значение
+$array[$keyMinValue] = $tmp;//присваиваем ключу наименьшего значения наибольшее значение
+print_r($array);
