@@ -32,3 +32,12 @@ echo $line;
 $line = 'London';
 $line = lcfirst($line);
 echo $line;
+
+/**
+ * Задание №33. Дана строка 'london is the capital of great britain'.
+ * Сделайте из нее строку 'London Is The Capital Of Great Britain'.
+ */
+
+$line = 'london is the capital of great britain';
+$line = ucwords($line);
+echo $line;
