@@ -56,3 +56,10 @@ while (!empty($word)) {
     $word = strtok(' ');
 }
 print_r($words);
+
+/**
+ * Задание №35. Вывод строки 'Hello world!' в обратном порядке
+ */
+
+$line = 'Hello world!';
+echo strrev($line);
