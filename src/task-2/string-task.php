@@ -63,3 +63,14 @@ print_r($words);
 
 $line = 'Hello world!';
 echo strrev($line);
+
+/**
+ * Задание №36. Преобразовать первый символ строки ('hello world!', 'привет мир!') в верхний регистр.
+ */
+
+$lineOne = 'hello world!';
+$lineSecond = 'привет мир!';
+$firstCharUp = mb_convert_case(mb_substr($lineSecond, 0,1), MB_CASE_UPPER);
+$lineSecond = $firstCharUp . mb_substr($lineSecond, 1);
+echo ucfirst($lineOne) .PHP_EOL;
+echo $lineSecond;
