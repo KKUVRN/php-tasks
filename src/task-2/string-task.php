@@ -41,3 +41,18 @@ echo $line;
 $line = 'london is the capital of great britain';
 $line = ucwords($line);
 echo $line;
+
+/**
+ * Задание №34. Разбить предложение на слова 'PHP это распространённый язык программирования
+ * общего назначения с открытым исходным кодом'
+ */
+
+$line = 'PHP это распространённый язык программирования общего назначения с открытым исходным кодом';
+$word  = strtok($line, ' ');
+
+$words = [];
+while (!empty($word)) {
+    $words[] = $word;
+    $word = strtok(' ');
+}
+print_r($words);
