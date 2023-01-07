@@ -74,3 +74,13 @@ $firstCharUp = mb_convert_case(mb_substr($lineSecond, 0,1), MB_CASE_UPPER);
 $lineSecond = $firstCharUp . mb_substr($lineSecond, 1);
 echo ucfirst($lineOne) .PHP_EOL;
 echo $lineSecond;
+
+/**
+ * Задание №37. Замените в строке все вхождения 'word' на 'letter'.
+ */
+
+$line = 'word world hello first two word one second three word';
+$searchValue = 'word';
+$peplaceValue = 'letter';
+$line = str_replace($searchValue, $peplaceValue, $line);
+echo $line;
