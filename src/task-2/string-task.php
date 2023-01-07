@@ -16,3 +16,19 @@ echo $line;
 $line = 'PHP';
 $line = strtolower($line);
 echo $line;
+
+/**
+ * Задание №31. Дана строка 'london'. Сделайте из нее строку 'London'
+ */
+
+$line = 'london';
+$line = ucfirst($line);
+echo $line;
+
+/**
+ * Задание №32. Дана строка 'london'. Сделайте из нее строку 'London'
+ */
+
+$line = 'London';
+$line = lcfirst($line);
+echo $line;
