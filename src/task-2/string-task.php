@@ -84,3 +84,30 @@ $searchValue = 'word';
 $peplaceValue = 'letter';
 $line = str_replace($searchValue, $peplaceValue, $line);
 echo $line;
+
+/**
+ * Задание №38. Дана строка. Если ее длина больше 10, то оставить в строке только первые 6 символов,
+ * иначе дополнить строку символами 'o' до длины 12
+ */
+
+//Первый вариант
+$lineFirst = 'abcdefghijklm';
+$lineSecond = 'abcdefg';
+echo (strlen($lineFirst) > 10 ? substr($lineFirst, 0, 6) : $lineFirst . str_repeat('o', 12 - strlen($lineFirst))) .PHP_EOL;
+echo (strlen($lineSecond) > 10 ? substr($lineSecond, 0, 6) : $lineSecond . str_repeat('o', 12 - strlen($lineSecond)));
+die;
+//Второй вариант
+$lineFirst = 'abcdefghijklm';
+$lineSecond = 'abcdefg';
+echo editLine($lineFirst) .PHP_EOL;
+var_dump(editLine($lineFirst));
+echo editLine($lineSecond);
+var_dump(editLine($lineSecond));
+
+function editLine (string $line): string {
+    if (strlen($line) > 10) {
+        return substr($line, 0, 6);
+    } else {
+        return $line . str_repeat('o', 12 - strlen($line));
+    }
+}
