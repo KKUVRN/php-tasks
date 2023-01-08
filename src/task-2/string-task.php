@@ -111,3 +111,21 @@ function editLine (string $line): string {
         return $line . str_repeat('o', 12 - strlen($line));
     }
 }
+
+/**
+ * Задание №39. Дана строка. Если она начинается на 'abc',
+ * то заменить их на 'www', иначе добавить в конец строки 'zzz'
+ */
+
+$lineFirst = 'abcdefg';
+$lineSecond = 'avcdefg';
+$searchValue = 'abc';
+$replaceValue = 'www';
+$addValue = 'zzz';
+
+echo (str_starts_with(strtolower($lineFirst), $searchValue) ?
+        str_replace($searchValue, $replaceValue, $lineFirst)
+        : $lineFirst . $addValue) .PHP_EOL;
+echo (str_starts_with(strtolower($lineSecond), $searchValue) ?
+    str_replace($searchValue, $replaceValue, $lineSecond)
+    : $lineSecond . $addValue);
