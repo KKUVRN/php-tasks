@@ -125,7 +125,28 @@ $addValue = 'zzz';
 
 echo (str_starts_with(strtolower($lineFirst), $searchValue) ?
         str_replace($searchValue, $replaceValue, $lineFirst)
-        : $lineFirst . $addValue) .PHP_EOL;
+            : $lineFirst . $addValue) .PHP_EOL;
 echo (str_starts_with(strtolower($lineSecond), $searchValue) ?
-    str_replace($searchValue, $replaceValue, $lineSecond)
-    : $lineSecond . $addValue);
+        str_replace($searchValue, $replaceValue, $lineSecond)
+            : $lineSecond . $addValue);
+
+/**
+ * Задание №40. Дана строка string = a1b2c3d4i5fg67, найти количество цифр.
+ */
+
+$line = 'a1b2c3d4i5fg67';
+
+$is_Flag = false;
+$count = 0;
+for ($i = 0; $i < strlen($line); ++$i) {
+    if (is_numeric($line[$i])) {
+        ++$count;
+        $is_Flag = true;
+    }
+}
+
+if ($is_Flag) {
+    echo 'Кол-во цифр - ' . $count;
+} else {
+    echo 'Строка не содержит цифр';
+}
